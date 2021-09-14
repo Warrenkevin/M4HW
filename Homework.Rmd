@@ -12,10 +12,6 @@ output:
 library(stringr)
 Vector_1<- c("Stately", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed")
 Vector_1[seq(from = 3, to = 22, by = 3)]
-
-Vector_2<-"Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed."
-Vector_2<-str_split(Vector_2, " ", simplify = TRUE)
-Vector_2[seq(from = 3, to = 22, by = 3)]
 ```
 ### Challenge 2
 
