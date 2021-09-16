@@ -39,7 +39,7 @@ a[1:5, 1:5, 3, 3]
 
 ### Challenge 4
 ```{r}
-Catarrhini <- c("Cercopithecidae","Hylobatidae","Hominidae")
+Catarrhini <- c("Cercopithecidea","Hylobatidae","Hominidae")
 Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae")
 Anthropoidea <- list(Platyrrhini, Catarrhini)
 names(Anthropoidea) <- list("Platyrrhini","Catarrhini")
