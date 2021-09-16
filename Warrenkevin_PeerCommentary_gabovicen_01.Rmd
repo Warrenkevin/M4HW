@@ -1,0 +1,78 @@
+---
+title: "M4 Homework"
+author: "Warrenkevin B. Henderson"
+date: "9/13/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```
+It all looked good. Hopefully you can help me some time, all the best.
+```
+
+
+### Challenge1
+```{r}
+library(stringr)
+Vector_1<- c("Stately", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed")
+Vector_1[seq(from = 3, to = 22, by = 3)]
+```
+### Challenge 2
+
+```{r}
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+m
+x <- m[,c(2,3,6)]
+x
+
+x <- m[6:8,]
+x
+
+x <- m[2:6,2:9]
+x
+```
+### Challenge 3
+
+```{r}
+a <- array(data = 400:1, dim = c(5, 5, 4, 4))
+a
+a[1, 1, 1, 2]
+a[2,3,2,]
+a[1:5, 1:5, 3, 3]
+```
+
+### Challenge 4
+```{r}
+Catarrhini <- c("Cercopithecidae","Hylobatidae","Hominidae")
+Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae")
+Anthropoidea <- list(Platyrrhini, Catarrhini)
+names(Anthropoidea) <- list("Platyrrhini","Catarrhini")
+Anthropoidea
+Tarsioidea <- c("Tarsiidae")
+Tarsioidea
+Haplorhini <- list(Anthropoidea, Tarsioidea)
+names(Haplorhini) <- list("Anthropoidea", "Tarsioidea")
+Haplorhini
+Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
+    "Daubentoniidae")
+Lorisoidea <- c("Lorisidae", "Galagidae")
+Strepsirhini <- list(Lemuroidea, Lorisoidea)
+names(Strepsirhini) <- list("Lemuroidea", "Lorisoidea")
+Strepsirhini
+Primate <- list(Haplorhini, Strepsirhini)
+names(Primate) <- list("Haplorhini", "Strepsirhini")
+Primate
+```
+
+### Challenge 5
+
+```{r}
+library(stringi)
+m3 <- matrix(data = c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE)
+m3 <- as.data.frame(m3)
+colnames(m3)
+m3[,2] <- as.logical(m3$V2)
+m3[,3] <- as.factor(m3$V3)
+str(m3)
+```
